@@ -1,5 +1,3 @@
-// var audio = new Audio("sounds/tom-3.mp3");
-// audio.play();
 for(var i = 0 ; i < document.querySelectorAll(".drum").length ; i++){
 
     document.querySelectorAll("button")[i].addEventListener("click", function(){
@@ -11,7 +9,7 @@ for(var i = 0 ; i < document.querySelectorAll(".drum").length ; i++){
         buttonanimation(buttonInnerHTML);    
     });
 }
-document.addEventListener("keydown", function(event) {    //event is like a variable which holds all the information about the keypressed also (Unlike the deprecated keypress event, the keydown event is fired for all keys, regardless of whether they produce a character value.)
+document.addEventListener("keydown", function(event) {    
     
     makesound(event.key);
     
@@ -66,5 +64,3 @@ function buttonanimation(currentkey) {
     }, 100); 
     
 }
-
-//The arrow function () => is a shorthand way of writing a function. It is often used in cases where a function takes a single argument and returns a single value. It has a shorter syntax and is more concise compared to the function keyword
